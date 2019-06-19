@@ -79,4 +79,4 @@ xxxxxx (64 chars)
 
 ## Nhận callback ở môi trường local thông qua Ngrok
 
-* Xem thêm [ở đây](https://github.com/tiendung1510/zlp-forward-callback-proxy)
+* Xem thêm [ở đây](https://github.com/zpmep/zlp-forward-callback-proxy)
