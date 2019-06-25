@@ -76,7 +76,3 @@ xxxxxx (64 chars)
 * Lấy trạng thái đơn hàng
 * Lấy trạng thái hoàn tiền
 * Lấy danh sách ngân hàng
-
-## Nhận callback ở môi trường local thông qua Ngrok
-
-* Xem thêm [ở đây](https://github.com/zpmep/forward-callback-proxy)

@@ -3,7 +3,6 @@
 require_once "config/config.php";
 require_once "utils/utils.php";
 require_once "utils/http.php";
-require_once "utils/ngrok.php";
 require_once "mac.php";
 
 class ZaloPayHelper
@@ -89,10 +88,6 @@ class ZaloPayHelper
     
     if (array_key_exists("embeddata", $params)) {
       $embeddata = $params["embeddata"];
-    }
-    
-    if (isset(Ngrok::$PUBLIC_URL)) {
-      $embeddata["forward_callback"] = Ngrok::$PUBLIC_URL . "/callback.php";
     }
 
     $order = [
