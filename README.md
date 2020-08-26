@@ -8,7 +8,7 @@ Demo tích hợp các API của ZaloPay cho PHP
 
 1. Môi trường chạy PHP
    * Apache / Nginx + PHP 7.0 + Mysql hoặc XAMPP / WAMPP 
-2. Tạo database `zalopay-demo` (`utf8_unicode_ci`)
+2. Tạo database `zalopay_demo` (`utf8_unicode_ci`)
 3. Tạo các bảng cần thiết bằng script sau
 
 ```sql
@@ -38,7 +38,7 @@ CREATE TABLE `refunds` (
   "db": {
     "host": "<db-host>",
     "port": 3306,
-    "dbname": "zalopay-demo",
+    "dbname": "zalopay_demo",
     "user": "<db-username>",
     "password": "<db-password>"
   }

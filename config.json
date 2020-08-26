@@ -12,10 +12,10 @@
     "getbanklist": "https://sbgateway.zalopay.vn/api/getlistmerchantbanks"
   },
   "db": {
-    "host": "localhost",
+    "host": "mysql",
     "port": 3306,
-    "dbname": "zalopay-demo",
+    "dbname": "zalopay_demo",
     "user": "root",
-    "password": "123"
+    "password": "123456"
   }
 }

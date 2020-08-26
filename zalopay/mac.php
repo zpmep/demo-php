@@ -48,9 +48,9 @@ class ZaloPayMacGenerator
     return self::compute($params['appid']."|".$params['reqtime']);
   }
 
-  static function redirect(Array $params)
+  static function redirect(Array $params , string $key2)
   {
     return self::compute($params['appid']."|".$params['apptransid']."|".$params['pmcid']."|".$params['bankcode']
-      ."|".$params['amount']."|".$params['discountamount']."|".$params["status"]);
+      ."|".$params['amount']."|".$params['discountamount']."|".$params["status"], $key2);
   }
 }
