@@ -38,19 +38,8 @@
   <form class="container mt-5" action="." method="POST">
     <?php if (isset($order)) { ?>
       <?php if ($order["returncode"] === 1) { ?>
-        <div id="qrcontainer" class="d-flex align-items-center justify-content-center">
-          <div class="text-center">
-            <div id="qrcode" class="border rounded p-4"></div>
-            <p class="mt-3">
-              <a id="web2app-link" href="<?php echo $order["orderurl"] ?>">
-                <small>Mở link này trên mobile để test Mobile Web To App</small>
-              </a>
-            </p>
-          </div>
-        </div>
-        <script src="/static/js/qrcode.min.js"></script>
         <script>
-          new QRCode(document.querySelector('#qrcode'), '<?php echo $order['orderurl'] ?>');
+          window.open('<?php echo $order["orderurl"] ?>')
         </script>
       <?php } ?>
     <?php } ?>
